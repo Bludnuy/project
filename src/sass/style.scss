@@ -1,0 +1,35 @@
+@use 'libs/bootstrap-reboot.min';
+// @use ('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+
+
+@use 'blocks/promo';
+@use 'blocks/title';
+@use 'blocks/button';
+@use 'base/variables';
+@use 'base/mixin';
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+@mixin mixin {
+    &::before {
+        content: '';
+        width: 36px;
+        height: 36px;
+        background: #FFA501;
+        position: absolute;
+        border-radius: 100%;
+        z-index: -1;
+    }
+}
+
+$main-color: #FFA501;
