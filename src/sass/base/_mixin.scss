@@ -1,3 +1,5 @@
+@use '../base/variables';
+
 @mixin before_circle {
     &:before {
         content: '';
@@ -8,6 +10,6 @@
         z-index: -1;
         top: -25%;
         left: 0;
-        background: $main-color;
+        background: variables.$main-color;
     }
 }

@@ -54,21 +54,21 @@ gulp.task("scripts", function () {
 
 gulp.task("fonts", function () {
 	return gulp
-		.src("src/fonts/**/*")
+		.src("src/fonts/**/*", { encoding: false })
 		.pipe(gulp.dest("dist/fonts"))
 		.pipe(browserSync.stream());
 });
 
 gulp.task("icons", function () {
 	return gulp
-		.src("src/icons/**/*")
+		.src("src/icons/**/*", { encoding: false })
 		.pipe(gulp.dest("dist/icons"))
 		.pipe(browserSync.stream());
 });
 
 gulp.task("images", function () {
 	return gulp
-		.src("src/img/**/*")
+		.src("src/img/**/*", { encoding: false })
 		.pipe(gulp.dest("dist/img"))
 		.pipe(browserSync.stream());
 });
