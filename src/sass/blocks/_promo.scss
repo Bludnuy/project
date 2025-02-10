@@ -8,7 +8,7 @@
 
     &__subtitle {
         position: relative;
-        @include before_circle;
+        @include mixin.before_circle;
         padding-left: 10px;
         z-index: 2;
     }
