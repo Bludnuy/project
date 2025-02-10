@@ -1,3 +1,5 @@
+@use "../base/mixin";
+
 .promo {
     min-height: 100vh;
     position: relative;
@@ -5,19 +7,9 @@
     padding-top: 205px;
 
     &__subtitle {
-        // &::before {
-        //     content: '';
-        //     width: 36px;
-        //     height: 36px;
-        //     background: black;
-        //     position: absolute;
-        //     border-radius: 100%;
-        //     z-index: -1;
-        // }
-
-        @include mixin;
-        padding-left: 10px;
         position: relative;
+        @include mixin.mixin;
+        padding-left: 10px;
         z-index: 2;
     }
 
